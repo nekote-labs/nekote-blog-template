@@ -1,11 +1,11 @@
 ---
-title: Markdown書き方サンプル
+title: マークダウン書き方サンプル
 slug: markdown-guide
 tags: [サンプル]
 emoji: "📝"
 ---
 
-Nekote Blogで使えるMarkdown記法のサンプル集です。それぞれの記法について、コードブロックとそのすぐ下の表示を見比べられます。
+Nekote Blogで使えるマークダウン記法のサンプル集です。それぞれの記法について、コードブロックとそのすぐ下の表示を見比べられます。
 
 ## frontmatter
 
@@ -153,6 +153,8 @@ export function greet(name) {
 ```
 ````
 
+↓
+
 ```js
 export function greet(name) {
   return `Hello, ${name}!`;
@@ -169,6 +171,8 @@ export function greet(name) {
 ```
 ````
 
+↓
+
 ```js title="app.js"
 export function greet(name) {
   return `Hello, ${name}!`;
@@ -177,19 +181,22 @@ export function greet(name) {
 
 ## 数式
 
+インライン数式は`$`で囲みます。
+
 ```md
-インライン数式は`$`で囲みます: $a^2 + b^2 = c^2$
+インライン数式: $a^2 + b^2 = c^2$
+```
+
+
+インライン数式: $a^2 + b^2 = c^2$
 
 ブロック数式は`$$`で囲みます。
 
+```md
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 ```
-
-インライン数式は`$`で囲みます: $a^2 + b^2 = c^2$
-
-ブロック数式は`$$`で囲みます。
 
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
@@ -201,19 +208,18 @@ $$
 ---
 ```
 
+↓
+
 ---
 
 ## コールアウト
 
-`:::`で囲むと、補足や注意書きを枠付きで目立たせられます。
+`:::`で囲むと、補足や注意書きを枠付きで目立たせられます。  
+種類は`tip`・`info`・`note`・`warning`・`alert`・`check`・`help`の7つです。
 
 ```md
 :::tip[ここがポイント]
 `[...]`でタイトルを付けられます。**強調**や`コード`もそのまま使えます。
-:::
-
-:::warning
-タイトルを省くと、アイコンと本文が横に並びます。
 :::
 ```
 
@@ -221,11 +227,17 @@ $$
 `[...]`でタイトルを付けられます。**強調**や`コード`もそのまま使えます。
 :::
 
+```md
+:::warning
+タイトルを省くと、アイコンと本文が横に並びます。
+:::
+```
+
 :::warning
 タイトルを省くと、アイコンと本文が横に並びます。
 :::
 
-種類は`tip`・`info`・`note`・`warning`・`alert`・`check`・`help`の7つです。外側を`::::`にすれば入れ子にもできます。
+外側を`::::`にすれば入れ子にもできます。
 
 ```md
 ::::note[入れ子の例]
@@ -249,23 +261,27 @@ $$
 
 ```md
 :::toggle[クリックで開く]
-折りたたまれていた中身です。中身も**Markdownとして**解釈されます。
+折りたたまれていた中身です。中身も**マークダウンとして**解釈されます。
 :::
 ```
 
 :::toggle[クリックで開く]
-折りたたまれていた中身です。中身も**Markdownとして**解釈されます。
+折りたたまれていた中身です。中身も**マークダウンとして**解釈されます。
 :::
 
 `{level=2}`〜`{level=4}`を付けると、サマリーを見出しにできます。HTMLの`<details>`でも同じような折りたたみを書けます。
 
-## 目次
-
 ```md
-::toc
+:::toggle[見出し3にしたトグルコンテンツ]{level=3}
+折りたたまれていた中身です。
+:::
 ```
 
-::toc
+:::toggle[見出し3にしたトグルコンテンツ]{level=3}
+折りたたまれていた中身です。
+:::
+
+
 
 ## カラム
 
@@ -301,25 +317,50 @@ $$
 ![サンプル画像](../images/sample-image.png)
 :::
 
-## ブックマーク（リンクカード）
+## 埋め込みとリンクカード
+
+urlだけの段落は、自動でリンクカード化されます。（urlによってはカード化されない場合もあります）
 
 ```md
-::bookmark{url="https://nekote.blog"}
+https://lism-css.com
 ```
 
-::bookmark{url="https://nekote.blog"}
+https://lism-css.com
 
-URLのOGP情報を取得して、リンクカードとして表示されます。
+
+次のように`::bookmark`を使ってもOKです。
+
+```md
+::bookmark{url="https://lism-css.com"}
+```
+
 
 ## 埋め込み
 
+また、youtubeやxなどの主要なサービスの一部は、urlだけの段落がカードリンクではなく自動で埋め込みコンテンツになります。
+
+```md
+https://www.youtube.com/watch?v=4I8f8y2IGBs
+```
+
+https://lism-css.com
+
+
+次のように`::embed`を使ってもOKです。
+
 ```md
 ::embed{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
 ```
 
-::embed{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
 
-対応サービスはYouTubeとXです。URLを1行だけで書いた場合も、自動で埋め込み（対応外のサービスはリンクカード）になります。
+埋め込みではなくリンクカードとして表示したい場合は、明示的に `::bookmark`を使います。
+
+```md
+::bookmark{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
+```
+
+::bookmark{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
+
 
 ## 動画
 
