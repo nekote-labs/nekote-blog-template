@@ -5,13 +5,11 @@ tags: [サンプル]
 emoji: "📝"
 ---
 
-Nekote Blogで使えるMarkdown記法のサンプル集です。それぞれの記法について、「書き方」のコードブロックと、そのすぐ下の「表示」を見比べられます。
+Nekote Blogで使えるMarkdown記法のサンプル集です。それぞれの記法について、コードブロックとそのすぐ下の表示を見比べられます。
 
 ## frontmatter
 
 ファイル先頭の`---`で囲まれた部分がfrontmatterです。記事のタイトルなどのメタ情報をYAML形式で書きます。
-
-書き方:
 
 ```md
 ---
@@ -27,8 +25,6 @@ emoji: "📝"
 
 ## 見出し
 
-書き方:
-
 ```md
 ## 見出し
 
@@ -39,16 +35,12 @@ emoji: "📝"
 
 ## 段落と改行
 
-書き方:
-
 ```md
 空行を挟むと、別の段落になります。
 
 改行を1つ入れただけの行は、
 同じ段落の中でつながります。
 ```
-
-表示:
 
 空行を挟むと、別の段落になります。
 
@@ -59,15 +51,11 @@ emoji: "📝"
 
 ## テキストの装飾
 
-書き方:
-
 ```md
 **太字**、*斜体*、~~打ち消し線~~、`インラインコード`が使えます。
 
 HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>K</kbd>のようなキー表記、<small>小さい文字</small>も書けます。
 ```
-
-表示:
 
 **太字**、*斜体*、~~打ち消し線~~、`インラインコード`が使えます。
 
@@ -76,8 +64,6 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 使えるHTMLタグは安全な範囲に限定されています。
 
 ## リスト
-
-書き方:
 
 ```md
 - 箇条書き
@@ -90,8 +76,6 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 - [ ] タスクリスト（未完了）
 - [x] タスクリスト（完了）
 ```
-
-表示:
 
 - 箇条書き
 - 箇条書き
@@ -105,16 +89,12 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## 引用
 
-書き方:
-
 ```md
 > 引用文です。
 > 行を続けて書くと、ひとつの段落にまとまります。
 >
 > `>`だけの行を挟むと、段落を分けられます。
 ```
-
-表示:
 
 > 引用文です。
 > 行を続けて書くと、ひとつの段落にまとまります。
@@ -123,15 +103,11 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## リンク
 
-書き方:
-
 ```md
 [Nekote Blog](https://nekote.blog)への外部リンク。
 
 同じリポジトリ内の記事への相対リンク: [ようこそ記事](./welcome.md)
 ```
-
-表示:
 
 [Nekote Blog](https://nekote.blog)への外部リンク。
 
@@ -141,15 +117,11 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## 画像
 
-書き方:
-
 ```md
 ![サンプル画像](../images/sample-image.png)
 
 <img src="../images/sample-image.png" alt="幅300pxのサンプル画像" width="300">
 ```
-
-表示:
 
 ![サンプル画像](../images/sample-image.png)
 
@@ -159,16 +131,12 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## テーブル
 
-書き方:
-
 ```md
 | 項目 | 説明 |
 | --- | --- |
 | GFM | テーブル・タスクリストなどの拡張記法 |
 | KaTeX | 数式の表示 |
 ```
-
-表示:
 
 | 項目 | 説明 |
 | --- | --- |
@@ -177,8 +145,6 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## コードブロック
 
-書き方:
-
 ````md
 ```js
 export function greet(name) {
@@ -186,8 +152,6 @@ export function greet(name) {
 }
 ```
 ````
-
-表示:
 
 ```js
 export function greet(name) {
@@ -197,8 +161,6 @@ export function greet(name) {
 
 言語名を付けると、シンタックスハイライトが効きます。さらにフェンスへ`title="…"`を足すと、ファイル名などのキャプションが付きます。
 
-書き方:
-
 ````md
 ```js title="app.js"
 export function greet(name) {
@@ -207,8 +169,6 @@ export function greet(name) {
 ```
 ````
 
-表示:
-
 ```js title="app.js"
 export function greet(name) {
   return `Hello, ${name}!`;
@@ -216,8 +176,6 @@ export function greet(name) {
 ```
 
 ## 数式
-
-書き方:
 
 ```md
 インライン数式は`$`で囲みます: $a^2 + b^2 = c^2$
@@ -228,8 +186,6 @@ $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 ```
-
-表示:
 
 インライン数式は`$`で囲みます: $a^2 + b^2 = c^2$
 
@@ -241,21 +197,15 @@ $$
 
 ## 区切り線
 
-書き方:
-
 ```md
 ---
 ```
-
-表示:
 
 ---
 
 ## コールアウト
 
 `:::`で囲むと、補足や注意書きを枠付きで目立たせられます。
-
-書き方:
 
 ```md
 :::tip[ここがポイント]
@@ -266,8 +216,6 @@ $$
 タイトルを省くと、アイコンと本文が横に並びます。
 :::
 ```
-
-表示:
 
 :::tip[ここがポイント]
 `[...]`でタイトルを付けられます。**強調**や`コード`もそのまま使えます。
@@ -279,8 +227,6 @@ $$
 
 種類は`tip`・`info`・`note`・`warning`・`alert`・`check`・`help`の7つです。外側を`::::`にすれば入れ子にもできます。
 
-書き方:
-
 ```md
 ::::note[入れ子の例]
 コールアウトの中に、
@@ -290,8 +236,6 @@ $$
 :::
 ::::
 ```
-
-表示:
 
 ::::note[入れ子の例]
 コールアウトの中に、
@@ -303,15 +247,11 @@ $$
 
 ## トグル（折りたたみ）
 
-書き方:
-
 ```md
 :::toggle[クリックで開く]
 折りたたまれていた中身です。中身も**Markdownとして**解釈されます。
 :::
 ```
-
-表示:
 
 :::toggle[クリックで開く]
 折りたたまれていた中身です。中身も**Markdownとして**解釈されます。
@@ -321,19 +261,13 @@ $$
 
 ## 目次
 
-書き方:
-
 ```md
 ::toc
 ```
 
-表示:
-
 ::toc
 
 ## カラム
-
-書き方:
 
 ```md
 ::::columns
@@ -345,8 +279,6 @@ $$
 :::
 ::::
 ```
-
-表示:
 
 ::::columns
 :::column
@@ -359,15 +291,11 @@ $$
 
 ## 図とキャプション
 
-書き方:
-
 ```md
 :::figure[画像のキャプション]
 ![サンプル画像](../images/sample-image.png)
 :::
 ```
-
-表示:
 
 :::figure[画像のキャプション]
 ![サンプル画像](../images/sample-image.png)
@@ -375,13 +303,9 @@ $$
 
 ## ブックマーク（リンクカード）
 
-書き方:
-
 ```md
 ::bookmark{url="https://nekote.blog"}
 ```
-
-表示:
 
 ::bookmark{url="https://nekote.blog"}
 
@@ -389,13 +313,9 @@ URLのOGP情報を取得して、リンクカードとして表示されます�
 
 ## 埋め込み
 
-書き方:
-
 ```md
 ::embed{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
 ```
-
-表示:
 
 ::embed{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
 
@@ -403,13 +323,9 @@ URLのOGP情報を取得して、リンクカードとして表示されます�
 
 ## 動画
 
-書き方:
-
 ```md
 [サンプル動画](../media/sample-video.mp4)
 ```
-
-表示:
 
 [サンプル動画](../media/sample-video.mp4)
 
@@ -417,25 +333,17 @@ URLのOGP情報を取得して、リンクカードとして表示されます�
 
 ## 音声
 
-書き方:
-
 ```md
 ::audio{url="../media/sample-audio.mp3"}
 ```
-
-表示:
 
 ::audio{url="../media/sample-audio.mp3"}
 
 ## ファイル
 
-書き方:
-
 ```md
 ::file[サンプルPDF]{url="../media/sample-document.pdf"}
 ```
-
-表示:
 
 ::file[サンプルPDF]{url="../media/sample-document.pdf"}
 
@@ -443,13 +351,9 @@ URLのOGP情報を取得して、リンクカードとして表示されます�
 
 ## 文字色とマーカー
 
-書き方:
-
 ```md
 <span class="u--keyText -keycolor:red">赤の文字色</span>と<span class="u--marker -keycolor:yellow">黄色のマーカー</span>が使えます。
 ```
-
-表示:
 
 <span class="u--keyText -keycolor:red">赤の文字色</span>と<span class="u--marker -keycolor:yellow">黄色のマーカー</span>が使えます。
 
