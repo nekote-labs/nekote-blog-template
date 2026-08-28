@@ -42,6 +42,7 @@ title: 記事のタイトル
 date: 2026-08-01
 slug: my-first-post
 tags: [日記, お知らせ]
+emoji: "📝"
 thumbnail: ../images/sample-thumbnail.png
 ---
 
@@ -56,6 +57,7 @@ thumbnail: ../images/sample-thumbnail.png
 | `slug` | - | 記事のURLスラッグ。省略時はファイル名が使われます |
 | `tags` | - | 記事に付けるタグ。複数書けます |
 | `category` | - | 記事に付けるカテゴリのslug |
+| `emoji` | - | 記事のアイコンにする絵文字（1つだけ） |
 | `thumbnail` | - | 記事のアイキャッチ画像 |
 | `cover` | - | 記事ページ上部のカバー画像 |
 
