@@ -132,16 +132,18 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 ## テーブル
 
 ```md
-| 項目 | 説明 |
-| --- | --- |
-| GFM | テーブル・タスクリストなどの拡張記法 |
-| KaTeX | 数式の表示 |
+| メニュー | 種類 | 価格 | おすすめ度 |
+| --- | --- | --- | --- |
+| ブレンドコーヒー | 飲み物 | 450円 | ★★★ |
+| チーズケーキ | デザート | 600円 | ★★★ |
+| サンドイッチ | 軽食 | 750円 | ★★☆ |
 ```
 
-| 項目 | 説明 |
-| --- | --- |
-| GFM | テーブル・タスクリストなどの拡張記法 |
-| KaTeX | 数式の表示 |
+| メニュー | 種類 | 価格 | おすすめ度 |
+| --- | --- | --- | --- |
+| ブレンドコーヒー | 飲み物 | 450円 | ★★★ |
+| チーズケーキ | デザート | 600円 | ★★★ |
+| サンドイッチ | 軽食 | 750円 | ★★☆ |
 
 ## コードブロック
 
@@ -343,7 +345,7 @@ https://lism-css.com
 https://www.youtube.com/watch?v=4I8f8y2IGBs
 ```
 
-https://lism-css.com
+https://www.youtube.com/watch?v=4I8f8y2IGBs
 
 
 次のように`::embed`を使ってもOKです。
@@ -351,16 +353,6 @@ https://lism-css.com
 ```md
 ::embed{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
 ```
-
-
-埋め込みではなくリンクカードとして表示したい場合は、明示的に `::bookmark`を使います。
-
-```md
-::bookmark{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
-```
-
-::bookmark{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
-
 
 ## 動画
 
