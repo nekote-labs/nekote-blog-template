@@ -2,6 +2,7 @@
 title: Nekote Blogへようこそ
 slug: welcome
 tags: [はじめに]
+category: お知らせ
 emoji: "👋"
 thumbnail: ../images/sample-thumbnail.png
 ---

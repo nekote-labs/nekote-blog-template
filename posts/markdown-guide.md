@@ -2,6 +2,7 @@
 title: マークダウン書き方サンプル
 slug: markdown-guide
 tags: [サンプル]
+category: ガイド
 emoji: "📝"
 ---
 

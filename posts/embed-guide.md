@@ -2,6 +2,7 @@
 title: 埋め込みコンテンツの書き方サンプル
 slug: embed-guide
 tags: [サンプル]
+category: ガイド
 emoji: "🧩"
 ---
 
