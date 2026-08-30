@@ -354,6 +354,8 @@ https://www.youtube.com/watch?v=4I8f8y2IGBs
 ::embed{url="https://www.youtube.com/watch?v=4I8f8y2IGBs"}
 ```
 
+その他の埋め込みコンテンツ（対応サービスの一覧とサンプル）は、[埋め込みコンテンツの書き方サンプル](./embed-guide.md)で確認できます。
+
 ## 動画
 
 ```md
