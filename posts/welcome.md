@@ -1,7 +1,6 @@
 ---
 title: Nekote Blogへようこそ
 slug: welcome
-draft: true
 tags: [はじめに]
 category: お知らせ
 emoji: "👋"
