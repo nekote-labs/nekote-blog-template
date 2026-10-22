@@ -1,7 +1,7 @@
 ---
 title: Nekote Blogへようこそ
 slug: welcome
-tags: [はじめに]
+tags: [はじめに, pickup]
 category: お知らせ
 emoji: "👋"
 thumbnail: ../images/sample-thumbnail.png
