@@ -331,11 +331,21 @@ https://lism-css.com
 https://lism-css.com
 
 
-次のように`::bookmark`を使ってもOKです。
+リンクカードとして表示したいときは、`::linkCard`と書きます。YouTubeなどの対応サービスのURLでも、埋め込みではなくカードになります。
+
+```md
+::linkCard{url="https://lism-css.com"}
+```
+
+::linkCard{url="https://lism-css.com"}
+
+`::bookmark`は、Notionの「ブックマーク」に慣れた方向けの別名（エイリアス）です。次の書き方でも同じリンクカードになります。
 
 ```md
 ::bookmark{url="https://lism-css.com"}
 ```
+
+`::linkCard[表示文字]{url="…"}`と書くと、リンク先の情報を取得するまでの文言を指定できます。情報を取得できた場合は、リンク先のタイトルに置き換わります。`::bookmark`でも同じように指定できます。
 
 
 ## 埋め込み
