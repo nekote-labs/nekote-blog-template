@@ -118,6 +118,8 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## 画像
 
+### 基本の書き方
+
 リポジトリ内の画像を相対パスで参照すると、同期時にNekote側へコピーされて配信されます。
 
 ```md
@@ -125,6 +127,8 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 ```
 
 ![サンプル画像](../images/sample-image.png)
+
+### リンク付きの画像
 
 画像を`[...](リンク先のURL)`で囲むと、リンク付きの画像になります。
 
@@ -134,6 +138,8 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 [![リンク付きのサンプル画像](../images/sample-image.png)](https://nekote.blog)
 
+### 幅を指定する
+
 HTMLの`<img>`を使うと、幅を指定できます。
 
 ```md
@@ -141,6 +147,8 @@ HTMLの`<img>`を使うと、幅を指定できます。
 ```
 
 <img src="../images/sample-image.png" alt="幅240pxのサンプル画像" width="240">
+
+### 文中に小さい画像を入れる
 
 テキストに続けて`<img>`を書くと、文中に小さい画像を入れられます。
 
