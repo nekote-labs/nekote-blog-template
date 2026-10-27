@@ -118,25 +118,37 @@ HTMLタグを併用すると、<mark>マーカー</mark>や<kbd>Ctrl</kbd>+<kbd>
 
 ## 画像
 
+リポジトリ内の画像を相対パスで参照すると、同期時にNekote側へコピーされて配信されます。
+
 ```md
 ![サンプル画像](../images/sample-image.png)
-
-[![リンク付きのサンプル画像](../images/sample-image.png)](https://nekote.blog)
-
-<img src="../images/sample-image.png" alt="幅240pxのサンプル画像" width="240">
-
-テキストに続けて<img src="../images/sample-image.png" alt="小さいサンプル画像" width="48">のように、文中に小さい画像を入れられます。
 ```
 
 ![サンプル画像](../images/sample-image.png)
 
+画像を`[...](リンク先のURL)`で囲むと、リンク付きの画像になります。
+
+```md
 [![リンク付きのサンプル画像](../images/sample-image.png)](https://nekote.blog)
+```
+
+[![リンク付きのサンプル画像](../images/sample-image.png)](https://nekote.blog)
+
+HTMLの`<img>`を使うと、幅を指定できます。
+
+```md
+<img src="../images/sample-image.png" alt="幅240pxのサンプル画像" width="240">
+```
 
 <img src="../images/sample-image.png" alt="幅240pxのサンプル画像" width="240">
 
-テキストに続けて<img src="../images/sample-image.png" alt="小さいサンプル画像" width="48">のように、文中に小さい画像を入れられます。
+テキストに続けて`<img>`を書くと、文中に小さい画像を入れられます。
 
-リポジトリ内の画像を相対パスで参照すると、同期時にNekote側へコピーされて配信されます。画像を`[...](リンク先のURL)`で囲むと、リンク付きの画像になります。HTMLの`<img>`を使うと幅も指定できます。
+```md
+テキストに続けて<img src="../images/sample-image.png" alt="小さいサンプル画像" width="48">のように入れられます。
+```
+
+テキストに続けて<img src="../images/sample-image.png" alt="小さいサンプル画像" width="48">のように入れられます。
 
 ## テーブル
 
