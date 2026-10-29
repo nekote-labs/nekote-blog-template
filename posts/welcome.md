@@ -45,6 +45,7 @@ slug: my-first-post
 tags: [日記, お知らせ]
 emoji: "📝"
 thumbnail: ../images/sample-thumbnail.png
+description: 記事の内容を短くまとめた説明文
 ---
 
 本文
@@ -57,10 +58,10 @@ thumbnail: ../images/sample-thumbnail.png
 | `date` | - | 公開日。省略時は初めて公開した日時になります |
 | `slug` | - | 記事のURLスラッグ。省略時はファイル名が使われます |
 | `tags` | - | 記事に付けるタグ。複数書けます |
-| `category` | - | 記事に付けるカテゴリのslug |
+| `category` | - | 記事に付けるカテゴリ名（1つだけ） |
 | `emoji` | - | 記事のアイコンにする絵文字（1つだけ） |
 | `thumbnail` | - | 記事のアイキャッチ画像 |
-| `cover` | - | 記事ページ上部のカバー画像 |
+| `description` | - | 記事の説明文。検索結果やSNSでシェアしたときの説明と、記事一覧の抜粋に使われます。省略時は本文の冒頭から作られます |
 
 必須なのは`title`だけです。`slug`を書いておくと、後からファイル名を変えても記事のURLが変わらないのでお勧めです。
 
