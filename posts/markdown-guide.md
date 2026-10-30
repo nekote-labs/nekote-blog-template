@@ -2,8 +2,7 @@
 title: マークダウン書き方サンプル
 slug: markdown-guide
 description: Nekote Blogで使えるマークダウン記法を、記法ごとに1つずつ、書き方と表示を並べて紹介します。
-tags: [サンプル]
-category: ガイド
+category: はじめに
 emoji: "📝"
 ---
 

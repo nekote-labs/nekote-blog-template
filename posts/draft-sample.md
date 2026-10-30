@@ -1,6 +1,7 @@
 ---
 title: 下書きの見本
 draft: true
+category: はじめに
 ---
 
 この記事はfrontmatterに`draft: true`が書かれているため、pushしても公開されません。ダッシュボードの記事一覧には「下書き」として表示されます。
