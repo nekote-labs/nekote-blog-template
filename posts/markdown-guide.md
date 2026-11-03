@@ -175,6 +175,24 @@ export function greet(name) {
 }
 ```
 
+### Mermaid図
+
+言語名を`mermaid`にしたコードブロックは、図にならず、ハイライトしたコードとして表示されます。
+
+````md
+```mermaid
+flowchart LR
+  A["GitHub"] --> B["Nekote Blog"]
+  B --> C["公開ブログ"]
+```
+````
+
+```mermaid
+flowchart LR
+  A["GitHub"] --> B["Nekote Blog"]
+  B --> C["公開ブログ"]
+```
+
 ### 数式
 
 `$`で囲むと文中の数式、`$$`で囲むとブロックの数式になります。
